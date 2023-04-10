@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task build
+  build:
+    cmds:
+      - util/docker_build.sh sofle:seanflannery10
