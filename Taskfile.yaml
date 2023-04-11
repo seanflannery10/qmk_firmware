@@ -6,4 +6,4 @@ tasks:
       - task build
   build:
     cmds:
-      - util/docker_build.sh sofle:seanflannery10
+      - util/docker_build_amd64.sh sofle:seanflannery10
