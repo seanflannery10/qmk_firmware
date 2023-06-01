@@ -76,7 +76,6 @@ fi
 # Run container and build firmware
 "$RUNTIME" run --rm -it $usb_args \
 	$uid_arg \
-	--platform linux/amd64 \
 	--pull always \
 	-w /qmk_firmware \
 	-v "$dir":/qmk_firmware \

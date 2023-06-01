@@ -3,7 +3,11 @@ version: '3'
 tasks:
   default:
     cmds:
-      - task build
-  build:
+      - task dactyl:build
+  dactyl:build:
     cmds:
-      - util/docker_build_amd64.sh sofle:seanflannery10
+      - util/docker_build_update.sh handwired/dactyl_manuform/5x6:seanflannery10
+
+  sofle:build:
+    cmds:
+      - util/docker_build_update.sh sofle:seanflannery10
