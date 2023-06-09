@@ -6,7 +6,11 @@ tasks:
       - task dactyl:build
   dactyl:build:
     cmds:
-      - util/docker_build_update.sh handwired/dactyl_manuform/5x6:seanflannery10
+      - qmk build -kb mangokb/dactyl -km default
+
+  dactyl:flash:
+    cmds:
+      - qmk flash -kb mangokb/dactyl -km default
 
   sofle:build:
     cmds:
