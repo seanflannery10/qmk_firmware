@@ -4,13 +4,13 @@ tasks:
   default:
     cmds:
       - task dactyl:build
-  dactyl:build:
+  dactyl:compile:
     cmds:
-      - qmk build -kb mangokb/dactyl -km default
+      - qmk compile -kb mangokb/dactyl -km seanflannery10
 
   dactyl:flash:
     cmds:
-      - qmk flash -kb mangokb/dactyl -km default
+      - qmk flash -kb mangokb/dactyl -km seanflannery10
 
   sofle:build:
     cmds:
